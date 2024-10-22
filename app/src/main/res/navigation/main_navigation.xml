@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_navigation"
-    app:startDestination="@id/selectGenderScreen">
+    app:startDestination="@id/agePickScreen">
 
     <fragment
         android:id="@+id/countryPickScreen"
@@ -15,4 +15,9 @@
         android:name="com.shoxrux.cameraapp.ui.SelectGenderScreen"
         android:label="screen_select_gender"
         tools:layout="@layout/screen_select_gender" />
+    <fragment
+        android:id="@+id/agePickScreen"
+        android:name="com.shoxrux.cameraapp.ui.age_pick.AgePickScreen"
+        android:label="screen_age_pick"
+        tools:layout="@layout/screen_age_pick" />
 </navigation>

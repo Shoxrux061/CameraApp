@@ -10,6 +10,7 @@ material = "1.12.0"
 activity = "1.9.3"
 constraintlayout = "2.1.4"
 navigationFragmentKtx = "2.8.3"
+numberPicker = "2.4.13"
 viewbindingpropertydelegateFull = "1.5.9"
 worldcountrydata = "1.5.3"
 
@@ -25,6 +26,7 @@ androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
 androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
 androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+number-picker = { module = "io.github.ShawnLin013:number-picker", version.ref = "numberPicker" }
 viewbindingpropertydelegate-full = { module = "com.github.kirich1409:viewbindingpropertydelegate-full", version.ref = "viewbindingpropertydelegateFull" }
 worldcountrydata = { module = "com.github.blongho:worldCountryData", version.ref = "worldcountrydata" }
 

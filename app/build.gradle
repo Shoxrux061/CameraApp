@@ -53,6 +53,7 @@ dependencies {
     //ViewBinding base flavor
     implementation libs.viewbindingpropertydelegate.full
 
-    implementation 'io.github.ShawnLin013:number-picker:2.4.13'
+    //Number Picker
+    implementation libs.number.picker
 
 }

@@ -14,11 +14,36 @@
         android:background="@color/main_color"
         android:orientation="vertical">
 
+        <LinearLayout
+            android:id="@+id/back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp">
+
+
+            <ImageButton
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="?selectableItemBackgroundBorderless"
+                android:src="@drawable/ic_back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:text="@string/back"
+                android:textColor="@color/text_color"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+
         <com.google.android.material.imageview.ShapeableImageView
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_marginStart="20dp"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="10dp"
             android:background="@color/white"
             android:scaleType="center"
             android:src="@drawable/ic_gender"
@@ -30,11 +55,21 @@
             android:layout_gravity="center|start"
             android:layout_marginStart="20dp"
             android:layout_marginTop="20dp"
-            android:layout_marginBottom="50dp"
             android:fontFamily="@font/poppins_bold"
             android:text="What is your gender?"
             android:textColor="@color/white"
             android:textSize="22sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:textSize="15sp"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/white"
+            android:layout_marginEnd="20dp"
+            android:text="To make sure you receive the best personalized offer we need to know you gender"
+            android:layout_marginBottom="50dp" />
 
 
     </LinearLayout>
@@ -87,7 +122,6 @@
         android:layout_gravity="bottom"
         android:layout_marginHorizontal="20dp"
         android:layout_marginBottom="50dp"
-        android:alpha="0.3"
         android:background="@drawable/btn_shape"
         android:fontFamily="@font/poppins_regular"
         android:paddingTop="4dp"
