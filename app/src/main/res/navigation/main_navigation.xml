@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/selectGenderScreen">
+
+    <fragment
+        android:id="@+id/countryPickScreen"
+        android:name="com.shoxrux.cameraapp.ui.country_pick.CountryPickScreen"
+        android:label="screen_country_pick"
+        tools:layout="@layout/screen_country_pick" />
+    <fragment
+        android:id="@+id/selectGenderScreen"
+        android:name="com.shoxrux.cameraapp.ui.SelectGenderScreen"
+        android:label="screen_select_gender"
+        tools:layout="@layout/screen_select_gender" />
+</navigation>
