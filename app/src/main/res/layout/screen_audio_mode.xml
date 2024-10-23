@@ -3,11 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/background_color"
     android:orientation="vertical"
-    tools:context=".ui.motion_detection.MotionDetectionScreen">
-
+    tools:context=".ui.audio_mode.AudioModeScreen">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -46,7 +44,7 @@
             android:layout_marginStart="20dp"
             android:layout_marginTop="10dp"
             android:fontFamily="@font/poppins_bold"
-            android:text="Keep motion detection on or off?"
+            android:text="What is your device audio mode?"
             android:textColor="@color/white"
             android:textSize="18sp" />
 
@@ -56,7 +54,7 @@
             android:layout_marginStart="20dp"
             android:layout_marginEnd="30dp"
             android:fontFamily="@font/poppins_regular"
-            android:text="Detect when a potential is near or inside your home or business. Alert you if people enter restricted area"
+            android:text="Cameras with Audio either have a built-in microphone on the camera or an audio input connector to connect an add-on microphone"
             android:textColor="@color/white"
             android:textSize="15sp" />
 
@@ -77,9 +75,18 @@
             android:fontFamily="@font/poppins_medium"
             android:paddingHorizontal="10dp"
             android:paddingTop="4dp"
-            android:text="Motion Detection On"
+            android:text="1 way (single)"
             android:textColor="@color/text_color"
             android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Built-in high-fidelity speaker and microphone pickup, support two way voice intercom"
+            android:textColor="@color/text_color"
+            android:textSize="13sp" />
 
         <RadioButton
             style="@style/CustomRadioButton"
@@ -94,54 +101,27 @@
             android:textColor="@color/text_color"
             android:textSize="16sp" />
 
-    </RadioGroup>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="30dp"
-        android:fontFamily="@font/poppins_medium"
-        android:text="Notification On or Off?"
-        android:textColor="@color/text_color"
-        android:textSize="16sp" />
-
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginHorizontal="20dp"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/radio_btn_back"
-        android:paddingHorizontal="20dp">
-
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center|start"
-            android:fontFamily="@font/poppins_medium"
-            android:paddingTop="4dp"
-            android:text="Notfication"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Listen to device surrounding through grant Microphone permission fell like you are right"
             android:textColor="@color/text_color"
-            android:textSize="16sp" />
+            android:textSize="13sp" />
 
-        <androidx.appcompat.widget.SwitchCompat
-            android:layout_width="wrap_content"
-            android:layout_gravity="end"
-            app:thumbTint="@color/white"
-            app:trackTint="#8B8B8B"
-            android:layout_height="wrap_content"/>
-
-    </FrameLayout>
+    </RadioGroup>
 
     <Button
         android:layout_width="200dp"
+        android:layout_height="50dp"
         android:layout_gravity="center"
+        android:layout_marginTop="30dp"
         android:backgroundTint="@color/main_color"
-        android:textColor="@color/white"
-        android:textSize="16sp"
         android:fontFamily="@font/poppins_medium"
         android:text="@string/continue_word"
-        android:layout_marginTop="30dp"
-        android:layout_height="50dp"/>
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
 
 </LinearLayout>

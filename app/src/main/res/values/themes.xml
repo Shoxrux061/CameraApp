@@ -20,5 +20,13 @@
         <item name="cornerSize">10%</item>
     </style>
 
+    <style name="CustomRadioButton" parent="Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="android:button">@null</item>
+        <item name="drawableTint">#0066FF</item>
+        <item name="android:background">@drawable/radio_btn_ripple</item>
+        <item name="android:drawableRight">?android:attr/listChoiceIndicatorSingle</item>
+        <item name="android:paddingEnd">8dp</item>
+    </style>
+
     <style name="Theme.CameraApp" parent="Base.Theme.CameraApp" />
 </resources>

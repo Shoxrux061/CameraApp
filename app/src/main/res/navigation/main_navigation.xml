@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_navigation"
-    app:startDestination="@id/deviceListScreen">
+    app:startDestination="@id/selectStorageScreen">
 
     <fragment
         android:id="@+id/countryPickScreen"
@@ -80,4 +80,24 @@
         android:name="com.shoxrux.cameraapp.ui.vision_mode.VisionModeScreen"
         android:label="screen_vision_mode"
         tools:layout="@layout/screen_vision_mode" />
+    <fragment
+        android:id="@+id/motionDetectionScreen"
+        android:name="com.shoxrux.cameraapp.ui.motion_detection.MotionDetectionScreen"
+        android:label="screen_motion_detection"
+        tools:layout="@layout/screen_motion_detection" />
+    <fragment
+        android:id="@+id/selectStorageScreen"
+        android:name="com.shoxrux.cameraapp.ui.select_storage.SelectStorageScreen"
+        android:label="screen_select_storage"
+        tools:layout="@layout/screen_select_storage" />
+    <fragment
+        android:id="@+id/audioModeScreen"
+        android:name="com.shoxrux.cameraapp.ui.audio_mode.AudioModeScreen"
+        android:label="screen_audio_mode"
+        tools:layout="@layout/screen_audio_mode" />
+    <fragment
+        android:id="@+id/deviceResolutionScreen"
+        android:name="com.shoxrux.cameraapp.ui.device_resolution.DeviceResolutionScreen"
+        android:label="screen_device_resolution"
+        tools:layout="@layout/screen_device_resolution" />
 </navigation>
