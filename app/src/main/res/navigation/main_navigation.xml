@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_navigation"
-    app:startDestination="@id/selectGenderScreen">
+    app:startDestination="@id/deviceListScreen">
 
     <fragment
         android:id="@+id/countryPickScreen"
@@ -55,4 +55,29 @@
         android:name="com.shoxrux.cameraapp.ui.device_category.DeviceCategoryScreen"
         android:label="screen_device_category"
         tools:layout="@layout/screen_device_category" />
+    <fragment
+        android:id="@+id/deviceListScreen"
+        android:name="com.shoxrux.cameraapp.ui.device_list.DeviceListScreen"
+        android:label="screen_device_list"
+        tools:layout="@layout/screen_device_list" />
+    <fragment
+        android:id="@+id/deviceConnectivityScreen"
+        android:name="com.shoxrux.cameraapp.ui.device_connectivity.DeviceConnectivityScreen"
+        android:label="screen_device_connectivity"
+        tools:layout="@layout/screen_device_connectivity" />
+    <fragment
+        android:id="@+id/recordingModeScreen"
+        android:name="com.shoxrux.cameraapp.ui.recording_mode.RecordingModeScreen"
+        android:label="screen_recording_mode"
+        tools:layout="@layout/screen_recording_mode" />
+    <fragment
+        android:id="@+id/fieldViewScreen"
+        android:name="com.shoxrux.cameraapp.ui.field_view.FieldViewScreen"
+        android:label="screen_field_view"
+        tools:layout="@layout/screen_field_view" />
+    <fragment
+        android:id="@+id/visionModeScreen"
+        android:name="com.shoxrux.cameraapp.ui.vision_mode.VisionModeScreen"
+        android:label="screen_vision_mode"
+        tools:layout="@layout/screen_vision_mode" />
 </navigation>

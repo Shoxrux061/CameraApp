@@ -3,4 +3,14 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="continue_word">Continue</string>
     <string name="back">Back</string>
+    <string name="device_1_text">iHome insight Smart indoor 1080p Wi-Fi Camera</string>
+    <string name="device_2_text">Scope 1080p HD Smart Auto-Tracking Security Camera, White</string>
+    <string name="device_3_text">iHome insight Smart indoor 1080p Wi-Fi Camera</string>
+    <string name="device_4_text">iHome 2 Pack ROTO Smart indoor Auto-Tracking Security Camera</string>
+    <string name="device_5_text">Sentinel  1080p Pan &amp; Tilt Wi-Fi Security Camera</string>
+    <string name="device_6_text">iHome 2 Pack ROTO Smart indoor Auto-Tracking Security Camera</string>
+    <string name="device_7_text">Doorpeek Smart Wired Doorbell, 1080p HD Camera Doorbell</string>
+    <string name="device_8_text">iHome Smart Battery Doorbell Camera</string>
+    <string name="device_9_text">iHome Insight Smart Outdoor Wi-Fi Security Camera 1080p HG IP65</string>
+    <string name="device_10_text">Doorbell record and live streams video in 1080p Full HD with a 4:3</string>
 </resources>
