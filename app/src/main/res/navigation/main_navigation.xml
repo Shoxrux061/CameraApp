@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_navigation"
-    app:startDestination="@id/selectStorageScreen">
+    app:startDestination="@id/countryPickScreen">
 
     <fragment
         android:id="@+id/countryPickScreen"
@@ -16,7 +16,7 @@
     </fragment>
     <fragment
         android:id="@+id/selectGenderScreen"
-        android:name="com.shoxrux.cameraapp.ui.SelectGenderScreen"
+        android:name="com.shoxrux.cameraapp.ui.select_gender.SelectGenderScreen"
         android:label="screen_select_gender"
         tools:layout="@layout/screen_select_gender" >
         <action
@@ -54,50 +54,122 @@
         android:id="@+id/deviceCategoryScreen"
         android:name="com.shoxrux.cameraapp.ui.device_category.DeviceCategoryScreen"
         android:label="screen_device_category"
-        tools:layout="@layout/screen_device_category" />
+        tools:layout="@layout/screen_device_category" >
+        <action
+            android:id="@+id/action_deviceCategoryScreen_to_deviceListScreen"
+            app:destination="@id/deviceListScreen" />
+    </fragment>
     <fragment
         android:id="@+id/deviceListScreen"
         android:name="com.shoxrux.cameraapp.ui.device_list.DeviceListScreen"
         android:label="screen_device_list"
-        tools:layout="@layout/screen_device_list" />
+        tools:layout="@layout/screen_device_list" >
+        <action
+            android:id="@+id/action_deviceListScreen_to_deviceConnectivityScreen"
+            app:destination="@id/deviceConnectivityScreen" />
+    </fragment>
     <fragment
         android:id="@+id/deviceConnectivityScreen"
         android:name="com.shoxrux.cameraapp.ui.device_connectivity.DeviceConnectivityScreen"
         android:label="screen_device_connectivity"
-        tools:layout="@layout/screen_device_connectivity" />
+        tools:layout="@layout/screen_device_connectivity" >
+        <action
+            android:id="@+id/action_deviceConnectivityScreen_to_recordingModeScreen"
+            app:destination="@id/recordingModeScreen" />
+    </fragment>
     <fragment
         android:id="@+id/recordingModeScreen"
         android:name="com.shoxrux.cameraapp.ui.recording_mode.RecordingModeScreen"
         android:label="screen_recording_mode"
-        tools:layout="@layout/screen_recording_mode" />
+        tools:layout="@layout/screen_recording_mode" >
+        <action
+            android:id="@+id/action_recordingModeScreen_to_fieldViewScreen"
+            app:destination="@id/fieldViewScreen" />
+    </fragment>
     <fragment
         android:id="@+id/fieldViewScreen"
         android:name="com.shoxrux.cameraapp.ui.field_view.FieldViewScreen"
         android:label="screen_field_view"
-        tools:layout="@layout/screen_field_view" />
+        tools:layout="@layout/screen_field_view" >
+        <action
+            android:id="@+id/action_fieldViewScreen_to_visionModeScreen"
+            app:destination="@id/visionModeScreen" />
+    </fragment>
     <fragment
         android:id="@+id/visionModeScreen"
         android:name="com.shoxrux.cameraapp.ui.vision_mode.VisionModeScreen"
         android:label="screen_vision_mode"
-        tools:layout="@layout/screen_vision_mode" />
+        tools:layout="@layout/screen_vision_mode" >
+        <action
+            android:id="@+id/action_visionModeScreen_to_motionDetectionScreen"
+            app:destination="@id/motionDetectionScreen" />
+    </fragment>
     <fragment
         android:id="@+id/motionDetectionScreen"
         android:name="com.shoxrux.cameraapp.ui.motion_detection.MotionDetectionScreen"
         android:label="screen_motion_detection"
-        tools:layout="@layout/screen_motion_detection" />
+        tools:layout="@layout/screen_motion_detection" >
+        <action
+            android:id="@+id/action_motionDetectionScreen_to_selectStorageScreen"
+            app:destination="@id/selectStorageScreen" />
+    </fragment>
     <fragment
         android:id="@+id/selectStorageScreen"
         android:name="com.shoxrux.cameraapp.ui.select_storage.SelectStorageScreen"
         android:label="screen_select_storage"
-        tools:layout="@layout/screen_select_storage" />
+        tools:layout="@layout/screen_select_storage" >
+        <action
+            android:id="@+id/action_selectStorageScreen_to_audioModeScreen"
+            app:destination="@id/audioModeScreen" />
+    </fragment>
     <fragment
         android:id="@+id/audioModeScreen"
         android:name="com.shoxrux.cameraapp.ui.audio_mode.AudioModeScreen"
         android:label="screen_audio_mode"
-        tools:layout="@layout/screen_audio_mode" />
+        tools:layout="@layout/screen_audio_mode" >
+        <action
+            android:id="@+id/action_audioModeScreen_to_deviceResolutionScreen"
+            app:destination="@id/deviceResolutionScreen" />
+    </fragment>
     <fragment
         android:id="@+id/deviceResolutionScreen"
         android:name="com.shoxrux.cameraapp.ui.device_resolution.DeviceResolutionScreen"
         android:label="screen_device_resolution"
-        tools:layout="@layout/screen_device_resolution" />
+        tools:layout="@layout/screen_device_resolution" >
+        <action
+            android:id="@+id/action_deviceResolutionScreen_to_internetConnectionScreen"
+            app:destination="@id/internetConnectionScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/internetConnectionScreen"
+        android:name="com.shoxrux.cameraapp.ui.inter_connection.InternetConnectionScreen"
+        android:label="screen_internet_connection"
+        tools:layout="@layout/screen_internet_connection" >
+        <action
+            android:id="@+id/action_internetConnectionScreen_to_connectionSplashScreen"
+            app:destination="@id/connectionSplashScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/connectionSplashScreen"
+        android:name="com.shoxrux.cameraapp.ui.splash_connection.ConnectionSplashScreen"
+        android:label="screen_connection_splash"
+        tools:layout="@layout/screen_connection_splash" >
+        <action
+            android:id="@+id/action_connectionSplashScreen_to_homeScreen"
+            app:destination="@id/homeScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeScreen"
+        android:name="com.shoxrux.cameraapp.ui.main.HomeScreen"
+        android:label="screen_home"
+        tools:layout="@layout/screen_home" >
+        <action
+            android:id="@+id/action_homeScreen_to_notificationScreen"
+            app:destination="@id/notificationScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/notificationScreen"
+        android:name="com.shoxrux.cameraapp.ui.notification.NotificationScreen"
+        android:label="screen_notification"
+        tools:layout="@layout/screen_notification" />
 </navigation>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/background_color"
     android:orientation="vertical"
     tools:context=".ui.motion_detection.MotionDetectionScreen">
@@ -63,6 +63,7 @@
     </LinearLayout>
 
     <RadioGroup
+        android:id="@+id/radio_group"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="20dp"
@@ -110,6 +111,7 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginHorizontal="20dp"
+        android:id="@+id/notification"
         android:layout_marginTop="20dp"
         android:background="@drawable/radio_btn_back"
         android:paddingHorizontal="20dp">
@@ -126,22 +128,23 @@
 
         <androidx.appcompat.widget.SwitchCompat
             android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_gravity="end"
             app:thumbTint="@color/white"
-            app:trackTint="#8B8B8B"
-            android:layout_height="wrap_content"/>
+            app:trackTint="#8B8B8B" />
 
     </FrameLayout>
 
     <Button
         android:layout_width="200dp"
+        android:layout_height="50dp"
         android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:id="@+id/next_btn"
         android:backgroundTint="@color/main_color"
-        android:textColor="@color/white"
-        android:textSize="16sp"
         android:fontFamily="@font/poppins_medium"
         android:text="@string/continue_word"
-        android:layout_marginTop="30dp"
-        android:layout_height="50dp"/>
+        android:textColor="@color/white"
+        android:textSize="16sp" />
 
 </LinearLayout>

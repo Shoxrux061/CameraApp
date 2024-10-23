@@ -62,6 +62,7 @@
 
 
     <RadioGroup
+        android:id="@+id/radio_group"
         android:layout_width="260dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -118,6 +119,7 @@
     </LinearLayout>
 
     <Button
+        android:id="@+id/next_btn"
         android:layout_width="200dp"
         android:layout_height="50dp"
         android:layout_gravity="center"

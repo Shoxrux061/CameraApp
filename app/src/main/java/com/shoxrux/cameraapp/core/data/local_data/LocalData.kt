@@ -8,6 +8,8 @@ object LocalData {
 
     private val data = ArrayList<DeviceModel>()
 
+    private val homeData = ArrayList<DeviceModel>()
+
     fun getData(context: Context): List<DeviceModel> {
 
         data.clear()
@@ -74,6 +76,17 @@ object LocalData {
         )
 
         return data
+    }
+
+    fun getHomeData(): List<DeviceModel> {
+
+        homeData.clear()
+
+        homeData.add(DeviceModel(image = R.drawable.living_room, text = "Living Room"))
+        homeData.add(DeviceModel(image = R.drawable.bedroom_image, text = "Bedroom"))
+        homeData.add(DeviceModel(image = R.drawable.kitchern_image, text = "Kitchen"))
+
+        return homeData
     }
 
 }

@@ -64,6 +64,7 @@
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="50dp"
+        android:id="@+id/res_4k"
         android:layout_marginHorizontal="20dp"
         android:layout_marginTop="50dp"
         app:cardBackgroundColor="@color/theme_color"
@@ -85,6 +86,7 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginHorizontal="20dp"
+        android:id="@+id/res_2k"
         android:layout_marginTop="10dp"
         app:cardBackgroundColor="@color/theme_color"
         app:cardCornerRadius="10dp">
@@ -106,6 +108,7 @@
         android:layout_height="50dp"
         android:layout_marginHorizontal="20dp"
         android:layout_marginTop="10dp"
+        android:id="@+id/res_1080"
         app:cardBackgroundColor="@color/theme_color"
         app:cardCornerRadius="10dp">
 
@@ -125,6 +128,7 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginHorizontal="20dp"
+        android:id="@+id/res_720"
         android:layout_marginTop="10dp"
         app:cardBackgroundColor="@color/theme_color"
         app:cardCornerRadius="10dp">
@@ -144,6 +148,7 @@
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="50dp"
+        android:id="@+id/res_480"
         android:layout_marginHorizontal="20dp"
         android:layout_marginTop="10dp"
         app:cardBackgroundColor="@color/theme_color"
@@ -165,6 +170,7 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginHorizontal="20dp"
+        android:id="@+id/res_4c"
         android:layout_marginTop="10dp"
         app:cardBackgroundColor="@color/theme_color"
         app:cardCornerRadius="10dp">
@@ -186,6 +192,7 @@
         android:layout_height="50dp"
         android:layout_marginHorizontal="20dp"
         android:layout_marginTop="10dp"
+        android:id="@+id/res_2c"
         app:cardBackgroundColor="@color/theme_color"
         app:cardCornerRadius="10dp">
 

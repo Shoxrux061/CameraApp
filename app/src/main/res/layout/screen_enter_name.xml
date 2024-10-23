@@ -102,6 +102,8 @@
         <EditText
             android:layout_width="0dp"
             android:layout_height="match_parent"
+            android:maxLines="1"
+            android:id="@+id/edit_text"
             android:layout_weight="1"
             android:background="#00FFFFFF"
             android:hint="Enter your name..." />
@@ -117,6 +119,7 @@
         android:background="@drawable/btn_shape"
         android:fontFamily="@font/poppins_regular"
         android:paddingTop="4dp"
+        android:id="@+id/next_btn"
         android:text="@string/continue_word"
         android:textAllCaps="false"
         android:textColor="@color/white"

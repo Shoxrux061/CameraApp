@@ -111,6 +111,7 @@
         android:paddingTop="4dp"
         android:text="@string/continue_word"
         android:textAllCaps="false"
+        android:id="@+id/next_btn"
         android:textColor="@color/white"
         android:textSize="15sp" />
 
