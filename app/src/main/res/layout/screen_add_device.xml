@@ -5,14 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background_color"
-    tools:context=".ui.SelectGenderScreen">
-
+    tools:context=".ui.add_device.AddDeviceScreen">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/main_color"
-        android:orientation="vertical"
         android:paddingBottom="20dp">
 
         <LinearLayout
@@ -20,10 +18,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
-            android:layout_marginTop="20dp"
-            android:background="?selectableItemBackground"
-            android:clickable="true"
-            android:focusable="true"
+            android:layout_marginTop="30dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
@@ -40,7 +35,7 @@
                 android:fontFamily="@font/poppins_medium"
                 android:text="@string/back"
                 android:textColor="@color/text_color"
-                android:textSize="15sp" />
+                android:textSize="18sp" />
 
         </LinearLayout>
 
@@ -53,7 +48,7 @@
             android:layout_marginTop="10dp"
             android:background="@color/white"
             android:scaleType="center"
-            android:src="@drawable/ic_gender"
+            android:src="@drawable/ic_device"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/back_btn"
             app:shapeAppearanceOverlay="@style/roundedImageView" />
@@ -65,22 +60,21 @@
             android:layout_gravity="center|start"
             android:layout_marginStart="20dp"
             android:fontFamily="@font/poppins_bold"
-            android:text="What is your gender?"
+            android:text="Add divice"
             android:textColor="@color/white"
             android:textSize="18sp"
             app:layout_constraintStart_toEndOf="@id/header_ic"
             app:layout_constraintTop_toTopOf="@id/header_ic" />
 
         <TextView
-            android:id="@+id/header_text_2"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginEnd="30dp"
             android:layout_marginBottom="50dp"
             android:fontFamily="@font/poppins_regular"
-            android:text="To make sure you receive the best personalized offer we need to know you gender"
+            android:text="To start to view camera on this device please add device first"
             android:textColor="@color/white"
-            android:textSize="13sp"
+            android:textSize="15sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="@id/header_text_1"
             app:layout_constraintTop_toBottomOf="@id/header_text_1" />
@@ -88,47 +82,10 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <RadioGroup
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <ImageView
+        android:layout_width="100dp"
         android:layout_gravity="center"
-        android:layout_marginTop="20dp"
-        android:gravity="center"
-        android:orientation="horizontal">
-
-
-        <RadioButton
-            android:layout_width="100dp"
-            android:layout_height="150dp"
-            android:layout_marginEnd="40dp"
-            android:background="@drawable/radio_btn_shape_selector"
-            android:button="@color/main_color"
-            android:drawableTop="@drawable/ic_man"
-            android:fontFamily="@font/poppins_medium"
-            android:gravity="center"
-            android:paddingTop="20dp"
-            android:text="Man"
-            android:textColor="@drawable/radio_btn_text_color"
-            android:textSize="16sp" />
-
-
-        <RadioButton
-            android:layout_width="100dp"
-            android:layout_height="150dp"
-            android:background="@drawable/radio_btn_shape_selector"
-            android:button="@color/main_color"
-            android:drawableTop="@drawable/ic_woman"
-            android:fontFamily="@font/poppins_medium"
-            android:gravity="center"
-            android:maxLines="1"
-            android:paddingTop="20dp"
-            android:text="Woman"
-            android:textColor="@drawable/radio_btn_text_color"
-            android:textSize="16sp" />
-
-
-    </RadioGroup>
-
+        android:layout_height="100dp"/>
 
     <androidx.appcompat.widget.AppCompatButton
         android:layout_width="match_parent"

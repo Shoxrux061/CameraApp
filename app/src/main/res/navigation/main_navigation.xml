@@ -3,21 +3,56 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_navigation"
-    app:startDestination="@id/agePickScreen">
+    app:startDestination="@id/selectGenderScreen">
 
     <fragment
         android:id="@+id/countryPickScreen"
         android:name="com.shoxrux.cameraapp.ui.country_pick.CountryPickScreen"
         android:label="screen_country_pick"
-        tools:layout="@layout/screen_country_pick" />
+        tools:layout="@layout/screen_country_pick" >
+        <action
+            android:id="@+id/action_countryPickScreen_to_selectGenderScreen"
+            app:destination="@id/selectGenderScreen" />
+    </fragment>
     <fragment
         android:id="@+id/selectGenderScreen"
         android:name="com.shoxrux.cameraapp.ui.SelectGenderScreen"
         android:label="screen_select_gender"
-        tools:layout="@layout/screen_select_gender" />
+        tools:layout="@layout/screen_select_gender" >
+        <action
+            android:id="@+id/action_selectGenderScreen_to_agePickScreen"
+            app:destination="@id/agePickScreen" />
+    </fragment>
     <fragment
         android:id="@+id/agePickScreen"
         android:name="com.shoxrux.cameraapp.ui.age_pick.AgePickScreen"
         android:label="screen_age_pick"
-        tools:layout="@layout/screen_age_pick" />
+        tools:layout="@layout/screen_age_pick" >
+        <action
+            android:id="@+id/action_agePickScreen_to_enterNameScreen"
+            app:destination="@id/enterNameScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/enterNameScreen"
+        android:name="com.shoxrux.cameraapp.ui.enter_name.EnterNameScreen"
+        android:label="screen_enter_name"
+        tools:layout="@layout/screen_enter_name" >
+        <action
+            android:id="@+id/action_enterNameScreen_to_addDeviceScreen"
+            app:destination="@id/addDeviceScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/addDeviceScreen"
+        android:name="com.shoxrux.cameraapp.ui.add_device.AddDeviceScreen"
+        android:label="screen_add_device"
+        tools:layout="@layout/screen_add_device" >
+        <action
+            android:id="@+id/action_addDeviceScreen_to_deviceCategoryScreen"
+            app:destination="@id/deviceCategoryScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/deviceCategoryScreen"
+        android:name="com.shoxrux.cameraapp.ui.device_category.DeviceCategoryScreen"
+        android:label="screen_device_category"
+        tools:layout="@layout/screen_device_category" />
 </navigation>
